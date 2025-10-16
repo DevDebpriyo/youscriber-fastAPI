@@ -22,7 +22,7 @@ app.add_middleware(
 )
 
 # Initialize Faster-Whisper
-model_size = "small.en"  # You can change to base.en, medium.en, etc.
+model_size = "small"  # You can change to base.en, medium.en, etc.
 model = WhisperModel(model_size, device="cpu", compute_type="int8")
 
 # Temp folder for audio files (absolute path to avoid CWD issues)
